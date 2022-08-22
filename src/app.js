@@ -2,10 +2,10 @@ const express = require("express");
 const cors = require("cors");
 require("./db/conn")
 
-const studentRouter = require("./featurerouter.js/studentrouter");
-const teacherRouter = require("./featurerouter.js/teacherrouter");
-const coursesRouter = require("./featurerouter.js/coursesrouter");
-const uploadApi = require("./featurerouter.js/imageupload");
+const studentRouter = require("./routers/studentrouter");
+const teacherRouter = require("./routers/teacherrouter");
+const coursesRouter = require("./routers/coursesrouter");
+const uploadApi = require("./routers/imageupload");
 const app = express();
 const port = process.env.PORT || 8000;
 
